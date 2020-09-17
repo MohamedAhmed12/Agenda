@@ -1,0 +1,16 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "username": "root",
+  "password": "",
+  "database": "agenda",
+  "synchronize": true,
+  "entities": ["dist/**/entities/*{.ts,.js}"],
+  "seeds": ["src/**/seeders/*{.ts,.js}"],
+  "factories": ["src/**/factories/*{.ts,.js}"],
+  "migration": ["src/**/migrations/*{.ts,.js}"],
+  "cli": {
+    "migrationsDir": "migration"
+  },
+  "logging": true
+}

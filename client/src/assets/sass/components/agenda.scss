@@ -1,0 +1,100 @@
+@import 'variables';
+
+.agenda {
+	h5,
+	h6 {
+		font-weight: 900;
+	}
+	.session--container:hover {
+		box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+		cursor: pointer;
+	}
+	.session--title {
+		color: #254d9f;
+		font-size: 16px;
+		font-weight: 600;
+	}
+	.session--tags p {
+		font-size: 14px;
+		background-color: #fce100;
+		color: #254d9f;
+		padding: 0 5px;
+		margin: 8px;
+		line-height: 24px;
+		font-weight: 800;
+		width: auto;
+	}
+	&.agenda--1 {
+		color: $blue;
+		.header {
+			background: $yellow;
+		}
+		.session--type {
+			background: $light-yellow;
+		}
+		.session--time {
+			color: $yellow;
+		}
+	}
+	&.agenda--2 {
+		color: $yellow;
+		.header {
+			background: $blue;
+		}
+		.session--type {
+			background: $light-blue;
+			color: #fff;
+			.session-track {
+				background: #fff;
+				color: $light-blue;
+			}
+		}
+		.session--time {
+			color: $light-blue;
+		}
+		.session--description {
+			color: $blue;
+		}
+	}
+}
+.modal-content {
+	.modal-header {
+		.modal-title {
+			color: $blue;
+			font-size: 35px !important;
+			font-weight: 900 !important;
+		}
+		.subTitle {
+			display: inline-block;
+			margin-right: 15px;
+			color: #8f8f8f;
+			font-family: Proxima Nova semi;
+			text-transform: uppercase;
+			font-size: 13px;
+		}
+	}
+	.modal-body {
+		.session--speakers {
+			color: #000;
+			border-top: 1px solid #f1f1f1;
+			font-family: Proxima Nova black;
+			font-weight: 900;
+			font-size: 1em;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			&:after {
+				content: '';
+				width: 40px;
+				height: 3px;
+				background-color: #254d9f;
+				margin: 8px 0 15px 0;
+				display: block;
+			}
+		}
+	}
+}
+@media (min-width: 576px) {
+	.modal-dialog {
+		max-width: 700px !important;
+	}
+}
