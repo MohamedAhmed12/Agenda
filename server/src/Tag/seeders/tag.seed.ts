@@ -13,7 +13,6 @@ export default class CreateTags implements Seeder {
     }
 
     await factory(Tag)().createMany(6);
-    console.log(faker);
 
     for (var i = 1; i < 31; i++) {
       await getConnection()
