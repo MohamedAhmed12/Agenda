@@ -76,14 +76,14 @@ function App() {
 			/>
 			<div className='container-fluid'>
 				<div className='row agenda__container overflow-hidden'>
-					<div className='col-6 p-0'>
+					<div className='col-md-6 p-0 col-sm-12'>
 						<Agenda
 							greeting={'Channel 1'}
 							sessions={sessionChannel1}
 							mainClass='agenda--1'
 						/>
 					</div>
-					<div className='col-6 p-0'>
+					<div className='col-md-6 p-0 col-sm-12'>
 						<Agenda
 							greeting={'Channel 2'}
 							sessions={sessionChannel2}

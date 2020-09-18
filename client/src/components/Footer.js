@@ -9,7 +9,7 @@ import {
 
 function Agenda() {
 	return (
-		<footer className=' footer'>
+		<footer className='container-fluid footer pt-4 pb-3'>
 			<div className='footer-content row'>
 				<div className='footer-content--left col-8 text-left'>
 					<div className='footer-input'>
